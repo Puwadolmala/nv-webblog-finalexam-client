@@ -1,7 +1,7 @@
 import Api from '@/services/Api'
 export default {
     index(search) {
-        return Api().get('users')
+        return Api('http://10.10.59.14:8081/course/courseId').get('users')
     },
     show(userId) {
         return Api().get('user/' + userId)
